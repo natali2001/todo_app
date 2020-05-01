@@ -1,12 +1,12 @@
 Rails.application.routes.draw do
   resources :projects do
-   resources :tasks do
-    member do
-     patch :complete
-     end 
-   end 
-  end 
+  	resources :tasks do
+  		member do
+  			patch :complete
+  		end
+  	end
+  end
   get 'new'=>'projects#index'
-  get 'tasks'=>'tasks#index'
+ 
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
