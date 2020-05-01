@@ -2,12 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\app",
-    "\\app\\assets\\config",
-    "\\app\\javascript\\packs",
-    "\\app\\models\\concerns",
-    "\\app\\views\\projects",
-    "\\app\\views\\tasks"
+    "\\public"
   ],
-  "SelectedNode": "\\app\\views",
+  "SelectedNode": "\\bin",
   "PreviewInSolutionExplorer": false
 }
