@@ -2,8 +2,12 @@
   "ExpandedNodes": [
     "",
     "\\app",
-    "\\public"
+    "\\app\\controllers",
+    "\\app\\jobs",
+    "\\app\\views",
+    "\\app\\views\\layouts",
+    "\\config"
   ],
-  "SelectedNode": "\\bin",
+  "SelectedNode": "\\app\\controllers\\tasks_controller.rb",
   "PreviewInSolutionExplorer": false
 }

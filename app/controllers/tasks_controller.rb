@@ -1,5 +1,6 @@
 class TasksController < ApplicationController
 before_action :set_project
+before_action :set_task, except: [:create]
 
 def create
 @task =  @project.tasks.create(task_params)
