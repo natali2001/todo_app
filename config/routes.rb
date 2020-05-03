@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'registration' =>'static_pages#registration'
   resources :projects do
   	resources :tasks do
   		member do
