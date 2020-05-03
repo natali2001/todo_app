@@ -1,4 +1,6 @@
 <%= form_for([@project, @project.tasks.build]) do |f| %>
 <%= f.text_field :name, placeholder: "New Task"  %>
+<label for="date">Deadline: </label>
+<input type="date" id="date" name="date"/>
 <%= f.submit  %>
 <% end %>

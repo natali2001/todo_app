@@ -6,6 +6,7 @@
   <div class="task">
    <p style="opacity: 0.4;"><strike><%= task.name %></strike></p>
     <p style="opacity: 0.4;"><strike><%= task.status %></strike></p>
+     
   </div>
   <div class="trash">
    <%= link_to "Delete", project_task_path(@project, task.id), method: :delete, data: { confirm: "Are you sure?" } %>
