@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_05_03_153610) do
+ActiveRecord::Schema.define(version: 2020_05_03_202323) do
 
   create_table "projects", force: :cascade do |t|
     t.string "name"
@@ -25,6 +25,7 @@ ActiveRecord::Schema.define(version: 2020_05_03_153610) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.datetime "completed_at"
+    t.string "position"
     t.index ["project_id"], name: "index_tasks_on_project_id"
   end
 

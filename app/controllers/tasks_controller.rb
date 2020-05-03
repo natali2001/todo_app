@@ -7,11 +7,10 @@ def create
   redirect_to @project
 end
 
-def prioritize
-    @task.insert_at(params[:position])
+# def prioritize
+ #   @task.insert_at(params[:position])
+  #end
 
-    render nothing: true, status: 200
-  end
 
 def destroy
   @task = @project.tasks.find(params[:id])
@@ -40,7 +39,7 @@ end
 
 
 def task_params
-params[ :task].permit( :name)
+params[ :task].permit( :name, :position)
 end
 
 end
