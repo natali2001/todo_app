@@ -20,8 +20,15 @@ test:
   <<: *default
   database: db/test.sqlite3
 
+# production:
+#   adapter: postgresql
+#   database: my_database_production
+#   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+#   timeout: 5000
+
 production:
   adapter: postgresql
-  database: my_database_production
-  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  timeout: 5000
+  encoding: unicode
+  database: myapp_production
+  username: myapp
+  password: <%= ENV['MYAPP_DATABASE_PASSWORD'] %>
