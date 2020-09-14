@@ -3,9 +3,10 @@
     "",
     "\\app",
     "\\app\\controllers",
-    "\\app\\jobs",
+    "\\app\\javascript\\packs",
     "\\app\\views",
-    "\\app\\views\\layouts",
+    "\\app\\views\\projects",
+    "\\app\\views\\tasks",
     "\\config"
   ],
   "SelectedNode": "\\app\\controllers\\tasks_controller.rb",
