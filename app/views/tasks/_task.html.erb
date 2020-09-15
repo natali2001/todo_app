@@ -1,26 +1,47 @@
+
 <div class="row clearfix">
  <% if task.completed? %>
-  <div class="complete">
-   <%= link_to "Mark as Complete", complete_project_task_path(@project, task.id), method: :patch %>
-  </div>
-  <div class="task">
-   <p style="opacity: 0.4;"><strike><%= task.name %></strike></p>
-    <p style="opacity: 0.4;"><strike><%= task.status %></strike></p>
-     
-  </div>
-  <div class="trash">
-   <%= link_to "Delete", project_task_path(@project, task.id), method: :delete, data: { confirm: "Are you sure?" } %>
-  </div>
+ <div class="page2">
+   <div class="task">
+     <p style="opacity: 0.4;">
+       <strike>
+         <%= task.name %>
+       </strike>
+     </p>
+     <p style="opacity: 0.4;">
+       <strike>
+         <%= task.status %>
+       </strike>
+     </p>
+
+   </div>
+   <div class="complete">
+     <%= link_to "Mark as Complete", complete_project_task_path(@project, task.id), method: :patch, class: "btn btn-outline-primary" %>
+   </div>
+
+   <div class="trash">
+     <%= link_to "Delete", project_task_path(@project, task.id), method: :delete, data: { confirm: "Are you sure?" } %>
+   </div>
+ </div> 
  <% else %>
-  <div class="complete">
-   <%= link_to "Mark as Complete", complete_project_task_path(@project, task.id), method: :patch %>
-  </div>
-  <div class="task">
-   <p><%= task.name %></p>
-   <p><%= task.status %></p>
-  </div>
-  <div class="trash">
-   <%= link_to "Delete", project_task_path(@project, task.id), method: :delete, data: { confirm: "Are you sure?" } %>
-  </div>
- <% end %>
-</div>
+ <div class="page2"> 
+   <div class="task">
+     <p>
+       <%= task.name %>
+     </p>
+     <p>
+       <%= task.status %>
+     </p>
+   </div>
+   <div class="complete">
+     <%= link_to "Mark as Complete", complete_project_task_path(@project, task.id), method: :patch, class: "btn btn-outline-primary" %>
+   </div>
+   <div class="trash">
+     <%= link_to "Delete", project_task_path(@project, task.id), method: :delete, data: { confirm: "Are you sure?" }, class:  "btn btn-outline-primary" %>
+   </div>
+ </div>
+   <% end %>
+ </div>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"></link>
+   <link rel="stylesheet" href="tasks.scss"></link>

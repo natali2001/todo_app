@@ -1,18 +1,29 @@
-<p id="notice"><%= notice %></p>
+<div class="page2-1">
+  <div class="page2">
+    <p id="notice">
+      <%= notice %>
+    </p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @project.name %>
-</p>
-
-<div id="tasks_wrapper">
-  
-  <%= render  @project.tasks %>
-    <div id="form" >
-      <%= render "tasks/form"  %>
+    <div class="main-word2">
+      <p>
+        <strong>Name:</strong>
+        <%= @project.name %>
+      </p>
     </div>
-</div>
 
-   <%= link_to "Back", projects_path , class: 'btn btn-success' %>
-  <%= link_to "Edit", edit_project_path(@project), class: 'btn btn-success' %>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <div id="tasks_wrapper">
+
+      <%= render  @project.tasks %>
+      <div id="form" >
+        <%= render "tasks/form"  %>
+      </div>
+    </div>
+    <div class="buttons">
+      <%= link_to "Back", projects_path , class: 'btn btn-light' %>
+        <%= link_to "Edit", edit_project_path(@project), class: 'btn btn-light' %>
+        </div>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    </link>
+    <link rel="stylesheet" href="tasks.scss"></link>
+  </div>
+</div>

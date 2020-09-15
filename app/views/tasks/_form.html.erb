@@ -1,15 +1,10 @@
+<div class="page2">
+  <div class="creating">
 <%= form_for([@project, @project.tasks.build]) do |f| %>
-<%= f.text_field :name, placeholder: "New Task"  %>
-<div>
-<label for="date">Deadline: </label>
-<input type="date" id="date" name="date"/></div>
-<div> 
-   <p><strong>Prioritize</strong></p>
-   <p><select name="preor">
-    <option value="s1">Low</option>
-    <option value="s2" selected>Middle</option>
-    <option value="s3">High</option>
-   </select> 
-  </div>
-<%= f.submit  %>
-<% end %>
+<%= f.text_field :name, placeholder: "New Task", class: "input-group-text"  %>
+  <%= f.submit  %>
+    <% end %>
+</div>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"></link>
+<link rel="stylesheet" href="tasks.scss"></link>
+</div>

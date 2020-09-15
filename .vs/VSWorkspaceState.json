@@ -2,13 +2,13 @@
   "ExpandedNodes": [
     "",
     "\\app",
-    "\\app\\controllers",
-    "\\app\\javascript\\packs",
+    "\\app\\assets",
+    "\\app\\assets\\stylesheets",
     "\\app\\views",
     "\\app\\views\\projects",
     "\\app\\views\\tasks",
     "\\config"
   ],
-  "SelectedNode": "\\app\\controllers\\tasks_controller.rb",
+  "SelectedNode": "\\app\\views\\projects\\_form.html.erb",
   "PreviewInSolutionExplorer": false
 }
